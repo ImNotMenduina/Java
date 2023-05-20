@@ -32,7 +32,7 @@ public class ContratoHora {
 	public void setValorHora(Double valorHora) {
 		this.valorHora = valorHora;
 	}
-
+ 
 	public Integer getHoras() {
 		return horas;
 	}
@@ -41,5 +41,7 @@ public class ContratoHora {
 		this.horas = horas;
 	}
 	
-	
+	public Double valorTotal() {
+		return valorHora * horas ; 
+	}
 }
