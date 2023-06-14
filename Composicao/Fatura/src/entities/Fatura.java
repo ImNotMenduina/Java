@@ -17,6 +17,23 @@ public class Fatura {
 	
 	List<Item> ItemList = new ArrayList<Item>() ; 
 	
+	public void adicionaItem(Integer i , Item item) {
+		for(int j=0 ; j<i ; j++) {
+			ItemList.add(item) ; 
+		}
+	}
+	
+	public Double obtemPreco() {
+		
+		Double preco = 0.0 ; 
+		
+		for(Item item : ItemList) {
+			preco += item.getPrecoUnitario() ; 
+		}
+		
+		return preco ; 
+	}
+	
 	public void setNome(String nome) {
 		this.nome = nome ; 
 	}
