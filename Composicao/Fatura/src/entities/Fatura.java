@@ -26,11 +26,10 @@ public class Fatura {
 	public Double obtemPreco() {
 		
 		Double preco = 0.0 ; 
-		
+
 		for(Item item : ItemList) {
 			preco += item.getPrecoUnitario() ; 
 		}
-		
 		return preco ; 
 	}
 	
