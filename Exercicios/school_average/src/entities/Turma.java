@@ -7,10 +7,7 @@ public class Turma {
 	
 	private Aluno[] Alunos ; // type[] name
 	
-	public Turma() {
-	}
-	
-	public void instTurma(int quantidade) {
+	public Turma(int quantidade) {
 		this.Alunos = new Aluno[quantidade] ; 
 	}
 	
